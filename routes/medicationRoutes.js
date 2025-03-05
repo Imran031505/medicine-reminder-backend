@@ -80,8 +80,7 @@ cron.schedule('* * * * *', async () => {
     medications.forEach((medication) => {
       sendSMS(
         medication.user_phone,
-          `📢 Hello! It's time to take your medication 💊: ${medication.medication_name}. Dosage:  ${medication.dosage}. Your health matters! Please confirm once you've taken it. Stay well! 😊`
-
+          ` Hello! It's time to take your medication : ${medication.medication_name}. Dosage:  ${medication.dosage}. `
         
       );
     });
